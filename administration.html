@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna University - Centre for Distance Education</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="main-nav">
+        <img id="main-logo" class="main-logo" src="images/Anna_University_Logo.png" alt="">
+        <div class="logo-text-container" id="main-heading">
+            <p class="logo-text-cde" id="logo-text-cde">CENTRE FOR DISTANCE EDUCATION</p>
+            <p class="logo-text-au" id="logo-text-au">ANNA UNIVERSITY, CHENNAI-25</p>
+        </div>
+        <div class="nav-buttons" id="nav-buttons">
+            <!-- <p class="nav-btn">New Registration</p> -->
+            <!-- <p class="nav-btn">Login</p> -->
+            <div class="search-container">
+                <div>
+                    <input id="search-box" class="search" type="text" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                </div>
+                <ul id="suggestions"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation-section" id="navigation-section">
+        <a href="index.html"><i class="fa-solid fa-house-chimney"></i></a>
+        <div class="dropdown-parent">
+            <p class="navigation-text"><i class="fa-solid fa-chevron-down"></i> &nbsp; ADMISSION</p>
+            <div class="dropdown-content">
+                <a href="mba.html">MBA</a>
+                <a href="mca.html">MCA</a>
+                <a href="msc.html">MSC CS</a>
+                <a href="https://onlinecde.annauniv.edu/" target="_blank">Online Learning - MBA</a>
+            </div>
+        </div>
+        <a href="administration.html"><p class="navigation-text">ADMINISTRATION</p></a>
+        <a href="https://coe1.annauniv.edu/home/index.php" target="_blank"><p class="navigation-text">CONTROLLER OF EXAMINATION</p></a>
+        
+        <div class="dropdown-parent">
+            <p class="navigation-text"><i class="fa-solid fa-chevron-down"></i> &nbsp; PROJECT</p>
+            <div class="dropdown-content">
+                <a href="https://cde.annauniv.edu/onlinembaproo/Default.aspx" target="_blank">MBA</a>
+                <a href="https://cdefee.annauniv.edu/PROJECT/index.php" target="_blank">MCA & MSC CS</a>
+            </div>
+        </div>
+
+        <div class="dropdown-parent">
+            <p class="navigation-text"><i class="fa-solid fa-chevron-down"></i> &nbsp; LOGIN</p>
+            <div class="dropdown-content">
+                <a target="_blank" href="https://cdefee.annauniv.edu/SIMS/index.php">Student</a>
+                <a href="#">Staff</a>
+                <a href="#">Study Centre</a>
+            </div>
+        </div>
+
+        <div class="dropdown-parent">
+            <p class="navigation-text"><i class="fa-solid fa-chevron-down"></i> &nbsp; STUDENT CORNER</p>
+            <div class="dropdown-content">
+                <a target="_blank" href="https://cde.annauniv.edu/QuestionBank.aspx">Question Bank</a>
+                <a href="#">Downloads</a>
+                <a target="_blank" href="documents/FAQCDE.pdf">FAQ</a>
+            </div>
+        </div>
+
+        <a href="gallery.html"><p class="navigation-text">GALLERY</p></a>
+
+        <div class="dropdown-parent">
+            <i class="fa-solid fa-bars" id="mobile-menu-icon"></i>
+            <div class="dropdown-content">
+                <div class="inner-dropdown-parent">
+                    <p class="inner-dropdown-heading"><i class="fa-solid fa-chevron-right"></i> &nbsp; PROJECT</p>
+                    <div class="inner-dropdown-content">
+                        <a href="#">MBA</a>
+                        <a href="#">MCA</a>
+                        <a href="#">MSC CS</a>
+                    </div>
+                </div>
+                <div class="inner-dropdown-parent">
+                    <p class="inner-dropdown-heading"><i class="fa-solid fa-chevron-right"></i> &nbsp; LOGIN</p>
+                    <div class="inner-dropdown-content">
+                        <a target="_blank" href="https://cdefee.annauniv.edu/SIMS/index.php">Student</a>
+                        <a href="#">Staff</a>
+                        <a href="#">Study Centre</a>
+                    </div>
+                </div>
+                <div class="inner-dropdown-parent">
+                    <p class="inner-dropdown-heading"><i class="fa-solid fa-chevron-right"></i> &nbsp; STUDENT CORNER</p>
+                    <div class="inner-dropdown-content">
+                        <a href="#">Question Bank</a>
+                        <a href="#">Downloads</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+                <a href="gallery.html"><p class="navigation-text">GALLERY</p></a>
+            </div>
+        </div>
+        
+    </div>
+
+
+    
+    <!-- administration section -->
+
+    <div class="administration-section" id="administration-main">
+        <p class="administration-section-heading">Administration</p>
+        <hr>
+
+        <div class="administration-section-inner">
+
+            <!-- Directors -->
+            <div class="administration-section-left" id="administration-directors">
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> DIRECTOR</p>
+                <div class="administration-section-container">
+                    <img src="images/directors/Dr.Mala_Director_CDE.jpg" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">Dr.T. MALA</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7201</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-envelope"></i> &nbsp; cdedirector[at]annauniv[dot]edu</p>
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> ADDITIONAL DIRECTOR</p>
+                <div class="administration-section-container">
+                    <img src="images/directors/P_NK.jpg" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">Dr. P. NIRMAL KUMAR</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7203</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-envelope"></i> &nbsp; nirmal[at]annauniv[dot]edu</p>
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> DEPUTY DIRECTOR ONLINE CELL -CDE</p>
+                <div class="administration-section-container">
+                    <img src="images/directors/Dr.B.L.Velammal.png" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">Dr. B.L. VELAMMAL</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7204</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-envelope"></i> &nbsp; velammalbl[at]gmail[dot]com</p>
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> DEPUTY DIRECTOR - MBA</p>
+                <div class="administration-section-container">
+                    <img src="images/directors/blank-photo.jpg" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">Dr. K. VENKATALAKSHMI</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7202</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-envelope"></i> &nbsp; drkvlcde[at]gmail[dot]com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- office administration -->
+
+            <div class="administration-section-left" id="administration-office-administration">
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> SUPERINTENDENT</p>
+                <div class="administration-section-container">
+                    <img src="images/office-administration/blank-photo.jpg" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">Dr. MALINI .S</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7206</p>
+                        
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> PROFESSIONAL ASSISTANT I</p>
+                <div class="administration-section-container">
+                    <img src="images/office-administration/madhumithi.png" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MS. MADHU MATHI. A</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7217</p>
+                        
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> PROFESSIONAL ASSISTANT II</p>
+                <div class="administration-section-container">
+                    <img src="images/office-administration/ppriya.PNG" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MS. PADMAPRIYA. K</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7207</p>
+                        
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> PROFESSIONAL ASSISTANT II</p>
+                <div class="administration-section-container">
+                    <img src="images/office-administration/veeramurugan.png" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MR. VEERAMURUGAN. A</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7218</p>
+                        
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> PROFESSIONAL ASSISTANT II</p>
+                <div class="administration-section-container">
+                    <img src="images/office-administration/KARTHIKEYAN.png" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MR. KARTHIKEYAN. P</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7207</p>
+                        
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> RECEPTIONIST CUM ACCOUNTANT</p>
+                <div class="administration-section-container">
+                    <img src="images/office-administration/LGanesab.jpg" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MR. GANESAN. L</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7216</p>
+                        
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> CLERICAL ASSISTANT</p>
+                <div class="administration-section-container">
+                    <img src="images/office-administration/vanithaa.png" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MS. VANITHA. M</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7207</p>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- assistant professors  -->
+
+            <div class="administration-section-left" id="administration-assistant-professors">
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> ASSISTANT PROFESSOR - MBA</p>
+                <div class="administration-section-container">
+                    <img src="images/assistant-professors/Dr.Akila.JPG" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">DR. AKILA. M</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7212 / 7215</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-envelope"></i> &nbsp; makila.2006@gmail.com</p>
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> ASSISTANT PROFESSOR - MBA</p>
+                <div class="administration-section-container">
+                    <img src="images/assistant-professors/Suja_Johnsy.JPG" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MS. SUJA JOHNCY.S</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7212 / 7215</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-envelope"></i> &nbsp; asujas27@gmail.com</p>
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> ASSISTANT PROFESSOR - MCA</p>
+                <div class="administration-section-container">
+                    <img src="images/assistant-professors/Saraswathi.jpg" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MS. SARASWATHI. N</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7213</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-envelope"></i> &nbsp; sachu.venki@gmail.com</p>
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> ASSISTANT PROFESSOR - M.SC</p>
+                <div class="administration-section-container">
+                    <img src="images/assistant-professors/Pradeep.jpg" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MR. PRADEEP.S</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7214</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-envelope"></i> &nbsp; pradhapsing@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- application programmers  -->
+
+            <div class="administration-section-left" id="administration-application-programmers">
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> APPLICATION PROGRAMMER (SR.)</p>
+                <div class="administration-section-container">
+                    <img src="images/app-programmer/A.Prem Anandh.JPG" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MR. PREM ANANDH . A</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 044 - 2235 7214</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-envelope"></i> &nbsp; arananthprem@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- program incharge  -->
+
+            <div class="administration-section-left" id="administration-program-incharge">
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> APPLICATION PROGRAMMER (SR.)</p>
+                <div class="administration-section-container">
+                    <img src="images/app-programmer/GANESH.png" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MR. GANESH KUMAR. B</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7225</p>
+                        <!-- <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; </p> -->
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> PROFESSIONAL ASSISTANT I</p>
+                <div class="administration-section-container">
+                    <img src="images/programme-incharge/Rajesh.jpg" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MR. RAJESH. S</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7209</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-envelope"></i> &nbsp; cdeset19@gmail.com</p>
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> APPLICATION PROGRAMMER (JR.)</p>
+                <div class="administration-section-container">
+                    <img src="images/programme-incharge/SENTHIL.png" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MR. SENTHIL. N</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7208</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; sc_cde@annauniv.edu</p>
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> PROFESSIONAL ASSISTANT II</p>
+                <div class="administration-section-container">
+                    <img src="images/programme-incharge/MARIKANNAN.png" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MR. MARIKANNAN. M</p>
+                        <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; 2235 7211</p>
+                        <!-- <p class="administration-section-description"><i class="fa-solid fa-phone"></i> &nbsp; </p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- supporting staffs  -->
+
+            <div class="administration-section-left" id="administration-supporting-staffs">
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> DRIVER</p>
+                <div class="administration-section-container">
+                    <img src="images/supporting-staffs/Srikanth.png" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MR. SRIKANTH. P</p>
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> PEON</p>
+                <div class="administration-section-container">
+                    <img src="images/supporting-staffs/Sathya.png" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MR. SATHYAMOORTHY.S</p>
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> PEON</p>
+                <div class="administration-section-container">
+                    <img src="images/supporting-staffs/RajiveeGandhi.png" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MR. RAJEEVGANDHI. G</p>
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> PEON</p>
+                <div class="administration-section-container">
+                    <img src="images/supporting-staffs/MohanDoss.png" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MR. MOHANDOSS. A</p>
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> LABOURER</p>
+                <div class="administration-section-container">
+                    <img src="images/supporting-staffs/Susila.PNG" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MS. SUSEELA.M</p>
+                    </div>
+                </div>
+
+                <p class="administration-section-designation"><i class="fa-solid fa-arrow-down-short-wide"></i> PEON</p>
+                <div class="administration-section-container">
+                    <img src="images/supporting-staffs/Madhan.png" alt="">
+                    <div class="administration-section-inner-container">
+                        <p class="administration-section-name">MR. MADHAN KUMAR.A</p>
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+            <div class="administration-section-right">
+                <p class="administration-section-inner-heading">Quick Links</p>
+                <div>
+                    <p onclick="handleAdministrationClick('administration-directors')" class="administration-section-right-links"><i class="fa-solid fa-arrow-right"></i> Directors</p>
+                    <p onclick="handleAdministrationClick('administration-office-administration')" class="administration-section-right-links"><i class="fa-solid fa-arrow-right"></i> Office Administration</p>
+                    <p onclick="handleAdministrationClick('administration-assistant-professors')" class="administration-section-right-links"><i class="fa-solid fa-arrow-right"></i> Assistant Professors</p>
+                    <p onclick="handleAdministrationClick('administration-application-programmers')" class="administration-section-right-links"><i class="fa-solid fa-arrow-right"></i> Application Programmers</p>
+                    <p onclick="handleAdministrationClick('administration-program-incharge')" class="administration-section-right-links"><i class="fa-solid fa-arrow-right"></i> Program Incharge</p>
+                    <p onclick="handleAdministrationClick('administration-supporting-staffs')" class="administration-section-right-links"><i class="fa-solid fa-arrow-right"></i> Supporting Staffs</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="footer-1">
+            <p class="footer-heading">CDE - ANNA UNIVERSITY</p>
+            <p class="footer-content">Centre for Distance Education Anna University, Chennai, Tamil Nadu, India - 600025.</p>
+            <div class="footer-inner">
+                <i class="fa-regular fa-envelope"></i>
+                <p class="footer-content"><a href="mailto: distanceprog@annauniv.edu">distanceprog@annauniv.edu</a></p>
+            </div>
+            <div class="footer-inner">
+                <i class="fa-solid fa-phone"></i>
+                <p class="footer-content">044-22357216/21</p>
+            </div>
+        </div>
+
+        <div class="footer-1">
+            <p class="footer-heading">STUDY CENTRE</p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="https://cde.annauniv.edu/cde.aspx">CDE Study Centre</a></p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="https://cde.annauniv.edu/ceg.aspx">CEG Study Centre</a></p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="https://cde.annauniv.edu/act.aspx">ACT Study Centre</a></p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="https://cde.annauniv.edu/mit.aspx">MIT Study Centre</a></p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="https://cde.annauniv.edu/auc.aspx">AU REGIONAL CENTRE, COIMBATORE</a></p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="https://cde.annauniv.edu/ucen.aspx">UCEG, NAGERCOIL</a></p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="https://cde.annauniv.edu/kln.aspx">ANNA UNIVERSITY REGIONAL CAMPUS,MADURAI</a></p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="https://cde.annauniv.edu/aut.aspx">AU REGIONAL CENTRE, TRICHY</a></p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="https://cde.annauniv.edu/ucegv.aspx">UCEG, VILLUPURAM</a></p>
+        </div>
+
+        <div class="footer-1">
+            <p class="footer-heading">Quick Links</p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="documents/stuinformation.pdf">Information and Instructions</a></p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="documents/BOSS.pdf">Break of Study Form</a></p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="documents/IDCARD.pdf">Duplicater ID Card Form</a></p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="documents/Ch_SC.pdf">Change of Study Centre Form</a></p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="documents/SPEZZ.pdf">Change of Specialization Form</a></p>
+        </div>
+
+        <div class="footer-1">
+            <p class="footer-heading">Student Corner</p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="https://cde.annauniv.edu/QuestionBank.aspx">Question Bank</a></p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a href="">Downloads</a></p>
+            <p class="footer-content"><i class="fa-solid fa-caret-right"></i> &nbsp; <a target="_blank" href="documents/FAQCDE.pdf">FAQ</a></p>
+        </div>
+
+    </div>
+
+    <footer class="copyrights-section">
+        <p class="copyrights-content">Copyright © Anna University, Chennai, Tamil Nadu, India 2023. All Rights Reserved.</p>
+    </footer>
+    
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
