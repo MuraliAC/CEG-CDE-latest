@@ -1343,9 +1343,10 @@ table tr td, table tr th{
         width: 100px;
     }
 
-    .navigation-section .navigation-text{
+    .navigation-section .navigation-text, .inner-dropdown-heading, .inner-dropdown-content a{
         font-size: .5rem;
     }
+
 
     .hidden-nav{
         top: 11.8rem
