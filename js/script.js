@@ -29,12 +29,21 @@ function handleWindowResize() {
         let innerDropdown = document.querySelectorAll(".inner-dropdown-parent")
         let innerDropdownContent = document.querySelectorAll(".inner-dropdown-content")
 
+        let i, j;
+
         function handleDropdownClick(index) {
-            dropdownContent[index].style.display = dropdownContent[index].style.display === "block" ? "none" : "block"
+            if (j !== "true") {
+                dropdownContent[index].style.display = dropdownContent[index].style.display === "block" ? "none" : "block"
+                i = index
+            }
+
         }
 
         function handleInnerDropdownClick(index) {
-            innerDropdownContent[index].style.display = dropdownContent[index].style.display === "block" ? "none" : "block"
+            innerDropdownContent[index].style.display = innerDropdownContent[index].style.display === "block" ? "none" : "block"
+            dropdownContent[i].style.display = "block"
+            if (innerDropdownContent[index].style.display === "none") j = "false"
+            else if (innerDropdownContent[index].style.display === "block") j = "true"
         }
 
         dropdown.forEach((elem, index) => {
@@ -197,5 +206,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+
 
 
