@@ -31,6 +31,9 @@ function handleWindowResize() {
 
         function handleDropdownClick(index) {
             dropdownContent[index].style.display = dropdownContent[index].style.display === "block" ? "none" : "block"
+        }
+
+        function handleInnerDropdownClick(index) {
             innerDropdownContent[index].style.display = dropdownContent[index].style.display === "block" ? "none" : "block"
         }
 
@@ -39,7 +42,7 @@ function handleWindowResize() {
         })
 
         innerDropdown.forEach((elem, index) => {
-            elem.addEventListener("click", function () { handleDropdownClick(index) })
+            elem.addEventListener("click", function () { handleInnerDropdownClick(index) })
         })
     }
 }
