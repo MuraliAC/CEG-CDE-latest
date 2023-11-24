@@ -26,12 +26,19 @@ function handleWindowResize() {
 
         let dropdown = document.querySelectorAll(".dropdown-parent")
         let dropdownContent = document.querySelectorAll(".dropdown-content")
+        let innerDropdown = document.querySelectorAll(".inner-dropdown-parent")
+        let innerDropdownContent = document.querySelectorAll(".inner-dropdown-content")
 
         function handleDropdownClick(index) {
             dropdownContent[index].style.display = dropdownContent[index].style.display === "block" ? "none" : "block"
+            innerDropdownContent[index].style.display = dropdownContent[index].style.display === "block" ? "none" : "block"
         }
 
         dropdown.forEach((elem, index) => {
+            elem.addEventListener("click", function () { handleDropdownClick(index) })
+        })
+
+        innerDropdown.forEach((elem, index) => {
             elem.addEventListener("click", function () { handleDropdownClick(index) })
         })
     }
@@ -187,43 +194,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// scrolling
-
-// const scrollableElement = document.querySelector('.listitem');
-// let scrollPosition = 0;
-
-// function scrollSlowly() {
-//     if (scrollPosition >= 100) {
-//         scrollPosition = 0;
-//     } else {
-//         scrollPosition += 1;
-//     }
-
-//     scrollableElement.style.transform = `translateY(-${scrollPosition}%)`;
-//     requestAnimationFrame(scrollSlowly);
-// }
-
-// scrollSlowly();
-
-
-
-
-
-
 
 
