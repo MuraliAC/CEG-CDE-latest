@@ -83,34 +83,7 @@ handleWindowResize();
 
 window.addEventListener("resize", handleWindowResize);
 
-const wrapper = document.querySelector('.carousel-wrapper');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const items = document.querySelectorAll('.carousel-item');
-let currentIndex = 0;
 
-function updateCarousel() {
-    const itemWidth = items[0].offsetWidth;
-    wrapper.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-}
-
-prevBtn.addEventListener('click', () => {
-    // if (currentIndex > 0) {
-    currentIndex--;
-    if (currentIndex === -1) currentIndex = items.length - 1
-    updateCarousel();
-    // }
-});
-
-nextBtn.addEventListener('click', () => {
-    // if (currentIndex < items.length - 1) {
-    currentIndex++;
-    currentIndex %= items.length
-    updateCarousel();
-    // }
-});
-
-updateCarousel();
 
 //administration page
 
@@ -190,22 +163,137 @@ searchBox.addEventListener('input', autocomplete);
 
 // main logo and name animation
 
-document.addEventListener('DOMContentLoaded', function () {
-    const heading = document.getElementById('logo-text-cde');
+// document.addEventListener('DOMContentLoaded', function () {
+//     const heading = document.getElementById('logo-text-cde');
 
-    const text = heading.textContent;
+//     const text = heading.textContent;
 
-    heading.textContent = '';
+//     heading.textContent = '';
 
-    const characters = text.split('');
+//     const characters = text.split('');
 
-    characters.forEach((char, index) => {
-        setTimeout(() => {
-            heading.textContent += char;
-        }, index * 100);
-    });
+//     characters.forEach((char, index) => {
+//         setTimeout(() => {
+//             heading.textContent += char;
+//         }, index * 100);
+//     });
 
+// });
+
+//study centre
+
+let studyCentre = [
+    [["Dr.P.Nirmal Kumar", "Associate Professor", "Department of Electronics and Communication", "22357203"], ["Dr.K. Venkatalakshmi", "Associate Professor", "Department of Management Studies", "9282101154, 044-22358775", "rajamagesh65@hotmail.com"]],
+    [["Dr. Meenakumari", "Assistant Professor", "Dept of Management Studies", "Anna University, Chennai - 25", "smeenasankar@yahoo.com"]],
+    [["Dr. S. Renganathan", "Professor", "Dept of Bio Technology", "Alagappa College of Technology", "Anna University, Chennai - 25", "2235 9145"], ["Dr.P.Vivekanandan", "Professor of Mathematics", "Department of Chemical Engineering", '9444729501, 044-22203509', 'actechcenter@rediffmail.com'], ['Dr. S. Renganathan', 'Professor', 'Dept of Bio Technology', 'Alagappa College of Technology', 'Anna University, Chennai - 25', '2235 9145']],
+    [['Dr. V Natarajan', 'Associate Professor', 'Dept of Instrumentation Engineering', 'MIT, Anna University, Chrompet, Chennai', '91-44-22516322', 'natraj@mitindia.edu, natraj_mit@rediffmail.com, mitcde@yahoo.com']],
+    [['Dr. M.V. Subha', 'Associate Professor', 'Dept of Management Studies', 'Anna University Regional Centre', 'Maruthamalai Road, Navavoor, Coimbatore - 641 046', '0422 - 2694433 / 9488482287']],
+    [['Dean i/c', 'University College of Engineering Nagercoil', 'Konam, Nagercoil - 629 004', '0465 - 2260511']],
+    [['Dr.P. Jothimurugan', 'Coordinator', '0452-2092612,6382825275', 'Fax : 0452-2698280', 'dr.tjmba@gmail.com']],
+    [['Dr. S. Sujatha', 'Assistant Professor', 'Dept of MCA', 'University College of Engineering', 'Trichy - 620 024', 'BIT Campus, Mandaiyur', '0431 - 2407979 / 43']],
+    [['Dr. R. Senthil', 'Dean i/c', 'University College of Engineering Villupuram', 'Kakuppam,Opp to Armed Reserve Police, Villupuram-605103', '04146-224500']]
+]
+
+function handleStudyCentreClick(val) {
+    const studyWrapper = document.createElement("div");
+    studyWrapper.id = "study";
+
+    const xMark = document.createElement("i")
+    xMark.id = "into-mark";
+    xMark.classList.add("fa-regular", "fa-circle-xmark", "into-mark")
+    studyWrapper.appendChild(xMark)
+    xMark.addEventListener("click", handleIntoClick)
+
+    const wrapper = document.createElement("div");
+    wrapper.id = "study-centre";
+
+    for (let i = 0; i < studyCentre[val].length; i++) {
+        for (let j = 0; j < studyCentre[val][i].length; j++) {
+            const para = document.createElement("p")
+            para.innerHTML = studyCentre[val][i][j];
+            wrapper.appendChild(para)
+            if (j === 0) para.classList.add("study-name")
+        }
+        if (i !== studyCentre[val].length - 1) wrapper.appendChild(document.createElement("hr"));
+    }
+
+    document.getElementById("study-wrapper").style.display = "flex"
+    document.getElementById("study-wrapper").appendChild(studyWrapper)
+    studyWrapper.appendChild(wrapper)
+
+    document.getElementById("whole-wrapper").style.display = "none"
+}
+
+function handleIntoClick() {
+    document.getElementById("study").remove();
+    document.getElementById("study-wrapper").style.display = "none"
+    document.getElementById("whole-wrapper").style.display = "block"
+
+}
+
+
+
+
+const wrapper = document.querySelector('.carousel-wrapper');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const items = document.querySelectorAll('.carousel-item');
+let currentIndex = 0;
+
+function updateCarousel() {
+    const itemWidth = items[0].offsetWidth;
+    wrapper.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
+
+prevBtn.addEventListener('click', () => {
+    // if (currentIndex > 0) {
+    currentIndex--;
+    if (currentIndex === -1) currentIndex = items.length - 1
+    updateCarousel();
+    // }
 });
+
+nextBtn.addEventListener('click', () => {
+    // if (currentIndex < items.length - 1) {
+    currentIndex++;
+    currentIndex %= items.length
+    updateCarousel();
+    // }
+});
+
+updateCarousel();
+
+
+
+
+
+
+
+
+
+
+// scrolling
+
+// const scrollableElement = document.querySelector('.listitem');
+// let scrollPosition = 0;
+
+// function scrollSlowly() {
+//     if (scrollPosition >= 100) {
+//         scrollPosition = 0;
+//     } else {
+//         scrollPosition += 1;
+//     }
+
+//     scrollableElement.style.transform = `translateY(-${scrollPosition}%)`;
+//     requestAnimationFrame(scrollSlowly);
+// }
+
+// scrollSlowly();
+
+
+
+
+
 
 
 
