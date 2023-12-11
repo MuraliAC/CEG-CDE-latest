@@ -1387,11 +1387,11 @@ table tr td, table tr th{
     }
 
     .navigation-section .navigation-text{
-        font-size: .4rem;
+        font-size: .45rem;
     }
 
     .navigation-section .dropdown-parent .dropdown-content a, .inner-dropdown-parent p{
-        font-size: .4rem;
+        font-size: .45rem;
     }
 
     .hidden-nav{
