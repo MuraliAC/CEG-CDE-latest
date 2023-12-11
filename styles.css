@@ -1387,7 +1387,11 @@ table tr td, table tr th{
     }
 
     .navigation-section .navigation-text{
-        font-size: .7rem;
+        font-size: .4rem;
+    }
+
+    .navigation-section .dropdown-parent .dropdown-content a, .inner-dropdown-parent p{
+        font-size: .4rem;
     }
 
     .hidden-nav{
@@ -1429,8 +1433,11 @@ table tr td, table tr th{
         font-size: .8rem;
     }
 
-    .inner-dropdown-heading{
-        font-size: .7rem;
+
+    .apply-now .apply-now-btn{
+        padding: 7px;
+        font-size: .65rem;
+        margin-left: 5px;
     }
     
 }
