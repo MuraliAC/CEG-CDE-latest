@@ -1377,10 +1377,10 @@ table tr td, table tr th{
 
 @media screen and (max-width: 450px) {
 
-    .dropdown-content, .inner-dropdown-content {
+/*     .dropdown-content, .inner-dropdown-content {
         width: 100px;
         padding: 6px;
-    }
+    } */
 
     .nav-btn {
         font-size: .5rem;
