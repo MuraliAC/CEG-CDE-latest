@@ -1377,6 +1377,11 @@ table tr td, table tr th{
 
 @media screen and (max-width: 450px) {
 
+    .dropdown-content, .inner-dropdown-content {
+        width: 100px;
+        padding: 6px;
+    }
+
     .nav-btn {
         font-size: .5rem;
         padding: 4px 8px;
@@ -1387,11 +1392,11 @@ table tr td, table tr th{
     }
 
     .navigation-section .navigation-text{
-        font-size: .45rem;
+        font-size: .4rem;
     }
 
     .navigation-section .dropdown-parent .dropdown-content a, .inner-dropdown-parent p{
-        font-size: .45rem;
+        font-size: .4rem;
     }
 
     .hidden-nav{
