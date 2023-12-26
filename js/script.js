@@ -21,7 +21,7 @@ function handleWindowResize() {
         }
     }
 
-    if (screenWidth <= 470) {
+    if (screenWidth <= 670) {
         // navigation bar dropdown
 
         let dropdown = document.querySelectorAll(".dropdown-parent")
@@ -29,21 +29,30 @@ function handleWindowResize() {
         let innerDropdown = document.querySelectorAll(".inner-dropdown-parent")
         let innerDropdownContent = document.querySelectorAll(".inner-dropdown-content")
 
-        let i, j;
+        let ind, j, prev;
 
         function handleDropdownClick(index) {
             if (j !== "true") {
                 dropdownContent[index].style.display = dropdownContent[index].style.display === "block" ? "none" : "block"
-                i = index
+                ind = index
             }
-
         }
 
         function handleInnerDropdownClick(index) {
-            innerDropdownContent[index].style.display = innerDropdownContent[index].style.display === "block" ? "none" : "block"
-            dropdownContent[i].style.display = "block"
-            if (innerDropdownContent[index].style.display === "none") j = "false"
-            else if (innerDropdownContent[index].style.display === "block") j = "true"
+            for (let i = 0; i < innerDropdownContent.length; i++) {
+                innerDropdownContent[i].style.display = "none"
+            }
+            if (prev === index) {
+                if (innerDropdownContent[index].style.display === "none") j = "false"
+                else if (innerDropdownContent[index].style.display === "block") j = "true"
+                return;
+            }
+            innerDropdownContent[index].style.display = "block"
+            dropdownContent[ind].style.display = "block"
+            if (prev !== index) {
+                if (innerDropdownContent[index].style.display === "block") j = "true"
+            }
+            prev = index
         }
 
         dropdown.forEach((elem, index) => {
@@ -262,6 +271,8 @@ nextBtn.addEventListener('click', () => {
 });
 
 updateCarousel();
+
+
 
 
 
