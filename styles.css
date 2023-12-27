@@ -1399,7 +1399,7 @@ table tr td, table tr th{
         font-size: .4rem;
     }
 
-    .navigation-section .dropdown-parent .dropdown-content a, .inner-dropdown-parent p{
+    .navigation-section .dropdown-parent .dropdown-content a, .inner-dropdown-parent p, #suggestions{
         font-size: .4rem;
     }
 
