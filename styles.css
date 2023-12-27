@@ -266,9 +266,9 @@ a{
     margin: 5px;
 }
 
-.dropdown-parent:last-child .dropdown-content{
+/* .dropdown-parent:last-child .dropdown-content{
     left: -120px;
-}
+} */
 
 .inner-dropdown-heading{
     background-color: #fff;
@@ -1377,10 +1377,14 @@ table tr td, table tr th{
 
 @media screen and (max-width: 450px) {
 
-/*     .dropdown-content, .inner-dropdown-content {
+    .dropdown-content{
         width: 100px;
-        padding: 6px;
-    } */
+    }
+
+    .dropdown-parent:last-child .dropdown-content{ 
+        left: auto;
+        right: 0;
+    }
 
     .nav-btn {
         font-size: .5rem;
