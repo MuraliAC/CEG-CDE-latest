@@ -163,7 +163,7 @@ function displaySuggestions(suggestionsArray) {
 }
 
 document.getElementById("search").addEventListener("click", function () {
-    window.location.href = suggest[searchBox.value]
+    if (suggestions.includes(searchBox.value)) window.location.href = suggest[searchBox.value]
 })
 
 searchBox.addEventListener('focus', autocomplete);
