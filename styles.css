@@ -266,9 +266,9 @@ a{
     margin: 5px;
 }
 
-/* .dropdown-parent:last-child .dropdown-content{
+.dropdown-parent:last-child .dropdown-content{
     left: -120px;
-} */
+}
 
 .inner-dropdown-heading{
     background-color: #fff;
@@ -1376,6 +1376,10 @@ table tr td, table tr th{
 /* mobile view */
 
 @media screen and (max-width: 450px) {
+
+    .dropdown-parent:last-child .dropdown-content{
+        left: 0;
+    }
 
     .dropdown-content{
         width: 100px;
