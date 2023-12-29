@@ -33,6 +33,12 @@ function handleWindowResize() {
 
         function handleDropdownClick(index) {
             if (j !== "true") {
+                for (let i = 0; i < dropdownContent.length; i++) {
+                    if (i !== index) {
+                        dropdownContent[i].style.display = "none"
+                    }
+                }
+
                 dropdownContent[index].style.display = dropdownContent[index].style.display === "block" ? "none" : "block"
                 ind = index
             }
@@ -45,6 +51,7 @@ function handleWindowResize() {
             if (prev === index) {
                 if (innerDropdownContent[index].style.display === "none") j = "false"
                 else if (innerDropdownContent[index].style.display === "block") j = "true"
+                prev = null
                 return;
             }
             innerDropdownContent[index].style.display = "block"
